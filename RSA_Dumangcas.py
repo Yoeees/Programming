@@ -61,7 +61,7 @@ class RSA:
         while exp > 0:
             if (exp % 2) == 1:  # If exp is odd
                 result = (result * base) % mod
-            exp = exp // 2  # exp = exp // 2
+            exp = exp // 2  
             base = (base * base) % mod
         return result
 
